@@ -3,21 +3,21 @@
 AniMate is DSL (Domain Specific Language) in the form of a Java applet made to create HTML and CSS animations seamlessly. This project was made for my CPSC410 course in a team of 4, however since it is a private repo on my student account I have decided to upload it here.
 
 
-## DSL Syntax: 
+# DSL Syntax: 
 
 * Please note that all parameters should be entered in the orders as they are listed in the guide below, separated by commas between each one.
 * Language is case sensitive so enter declarations as indicated 
 * Required inputs won’t need the “parameter=” included, but optional inputs will.
 	ie) Shape simple {rectangle, 200, 200, 0, 100, z-index = 1, color=yellow}
 
-###Canvas 
+##Canvas 
 Structure: Canvas {color=COLOR}
 Canvas is an optional statement, but can be used to change the colour of the canvas. The canvas is the background of the animation. The top left corner of the canvas is the reference point (0,0). All shapes and animations will be positioned relative to the reference point. 
 
 Required Input Parameters: 
 Color: Color of the shape in a string (accepted colour names are: black, blue, gray, green, purple, red, white, yellow) or any colour in hex color code form (ie. “# _ _ _ _ _ _”). 
 
-###Shape 
+##Shape 
 Structure: Shape NAME {SHAPE_TYPE, HEIGHT, WIDTH, POSX, POSY,  z-index=ZINDEX,  color=COLOR, angle=ANGLE}
  
 The creation of a shape. When using Animate statements, a shape will only show on the canvas when its start time is indicated.
@@ -54,7 +54,7 @@ Angle: the initial angular position of the line. By default this is 0, and it ra
 	ie) Line simpleLine {200, 0, 100, angle=-180}
  
 
-###Group
+##Group
 Structure: Group NAME {SHAPE_NAME_1, SHAPE_NAME_2, SHAPE_NAME_3...}
 Group allows the user to group shapes together so that when Animate is called on a group name, it will animate all the shapes/lines in the group together. The group name must be unique, and cannot be the same as other previously named shapes/lines. The shapes/lines in the group must already have been created.
 	Ie) Group multipleShapes {simpleSquare, simpleTriangle}
