@@ -10,14 +10,14 @@ AniMate is DSL (Domain Specific Language) in the form of a Java applet made to c
 * Required inputs won’t need the “parameter=” included, but optional inputs will.
 	ie) Shape simple {rectangle, 200, 200, 0, 100, z-index = 1, color=yellow}
 
-##Canvas 
+## Canvas 
 Structure: Canvas {color=COLOR}
 Canvas is an optional statement, but can be used to change the colour of the canvas. The canvas is the background of the animation. The top left corner of the canvas is the reference point (0,0). All shapes and animations will be positioned relative to the reference point. 
 
 Required Input Parameters: 
 Color: Color of the shape in a string (accepted colour names are: black, blue, gray, green, purple, red, white, yellow) or any colour in hex color code form (ie. “# _ _ _ _ _ _”). 
 
-##Shape 
+## Shape 
 Structure: Shape NAME {SHAPE_TYPE, HEIGHT, WIDTH, POSX, POSY,  z-index=ZINDEX,  color=COLOR, angle=ANGLE}
  
 The creation of a shape. When using Animate statements, a shape will only show on the canvas when its start time is indicated.
@@ -39,7 +39,7 @@ Angle: the initial angular position of the shape. By default this is 0, and it r
 	ie) Shape simple {rectangle, 200, 200, 0, 100, angle=-180}
  
 
-###Line 
+## Line 
 Structure: Line NAME {WIDTH, POSX, POSY,  z-index=ZINDEX,  color=COLOR, angle=ANGLE}
 The creation of a line. When using Animate statements, a line will only show on the canvas when its start time is indicated.
 Required Input Parameters:
@@ -54,12 +54,12 @@ Angle: the initial angular position of the line. By default this is 0, and it ra
 	ie) Line simpleLine {200, 0, 100, angle=-180}
  
 
-##Group
+## Group
 Structure: Group NAME {SHAPE_NAME_1, SHAPE_NAME_2, SHAPE_NAME_3...}
 Group allows the user to group shapes together so that when Animate is called on a group name, it will animate all the shapes/lines in the group together. The group name must be unique, and cannot be the same as other previously named shapes/lines. The shapes/lines in the group must already have been created.
 	Ie) Group multipleShapes {simpleSquare, simpleTriangle}
  
-Animate 
+## Animate 
 Structure: Animate NAME {[ X, Y, START_TIME, END_TIME, rotation=DIRECTION], …, loop=LOOP}
 The creation of an animation. Each animation of a shape should be in a set of square brackets. The specified shape can be given multiple animations in one line, by separating the animations by a comma between each set of square brackets. The animation will NOT change the shape’s original X and Y positions, so the next animation on the same shape will start from the same initial position as before.
 	Ie) Animate simple {[-50, -100, 0, 2, rotation=cw],[50, 100, 2, 4], loop=2}
