@@ -1,0 +1,12 @@
+Canvas {color=green}
+Shape Tri {triangle, 100, 100,  0, 0, z-index=1, color=red}
+Shape Ci {circle, 100, 100, 130, 0, z-index=1 , color=yellow}
+Shape Sq {rectangle, 100, 100, 280, 0, z-index=1 , color=yellow}
+Line li {135, 430, 0, color=green, angle=45}
+Shape Tr {triangle, 200, 200, 300, 500, z-index=2, color=blue}
+Shape C {circle, 200, 200, 220, 100, z-index=1 , color=#4b0082}
+Shape S {rectangle, 200, 200, 470, 100, z-index=1 , color=#EE82EE}
+Line l {270, 720, 100, color=white, angle=45}
+Group all {Tri, Ci, Sq, li, Tr, C, S}
+Animate l {[200,200,0,2,rotation=cw]}
+Animate all {[500,500,0,2], loop=inf}

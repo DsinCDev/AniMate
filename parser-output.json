@@ -1,0 +1,66 @@
+{
+  "Canvas": {
+    "height": 500,
+    "width": 500,
+    "color": "blue"
+  },
+  "Geometry": {
+    "SnowmanHead": {
+      "shape": "circle",
+      "height": 100,
+      "width": 100,
+      "x": 50,
+      "y": 50,
+      "color": "green",
+      "z-index": 1
+    },
+    "SnowmanBody": {
+      "shape": "circle",
+      "height": 150,
+      "width": 150,
+      "x": 30,
+      "y": 120,
+      "color": "green",
+      "z-index": 1
+    },
+    "SnowmanBottom": {
+      "shape": "circle",
+      "height": 200,
+      "width": 200,
+      "x": 5,
+      "y": 200,
+      "z-index": 1,
+      "color": "green"
+    },
+    "SnowmanArm": {
+      "shape": "line",
+      "width": 100,
+      "x": 50,
+      "y": 50,
+      "color": "black",
+      "z-index": 1,
+      "angle": 45
+    }
+  },
+  "Group": {
+    "Snowman": ["SnowmanHead", "SnowmanBody", "SnowmanBottom"]
+  },
+  "Animate": {
+    "Snowman": {
+      "0": {
+        "x": 100,
+        "y": 100,
+        "start": 0,
+        "end": 2
+      },
+      "1": {
+        "x": 100,
+        "y": 100,
+        "start": 2,
+        "end": 6,
+        "rotation": "ccw"
+      },
+      "loop": "inf"
+    }
+  }
+}
