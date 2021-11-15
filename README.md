@@ -7,7 +7,7 @@ AniMate is DSL (Domain Specific Language) in the form of a Java applet made to c
 1. Install JDK14+ or a JRE.
 2. Download the Release titled 'AniMate Executable'
 3. Open input.tcts in a text editor and use the AniMate syntax described below.
-4. Run AniMate.jar \
+4. Run AniMate.jar
 
 Alteratively you can run `javac Main.java` and `java Main` inside src/ui
 
