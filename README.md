@@ -5,6 +5,14 @@ AniMate is DSL (Domain Specific Language) in the form of a Java applet made to c
 
 # DSL Syntax: 
 
+Here is a small example of what you can make:
+#### Input:
+Canvas {color=blue}
+Shape simple {rectangle, 200, 200, 0, 100, z-index=1,color=yellow} 
+Animate simple {[300, 0, 0,  2, rotation=cw]}
+### Output:
+![Alt Text](https://i.imgur.com/b9mekEX.gif)
+
 * Please note that all parameters should be entered in the orders as they are listed in the guide below, separated by commas between each one.
 * Language is case sensitive so enter declarations as indicated 
 * Required inputs won’t need the “parameter=” included, but optional inputs will.
