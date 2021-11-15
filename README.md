@@ -3,7 +3,7 @@
 AniMate is DSL (Domain Specific Language) in the form of a Java applet made to create HTML and CSS animations seamlessly. This project was made for my CPSC410 course in a team of 4, however since it is a private repo on my student account I have decided to upload it here.
 
 
-#Instructions
+# Instructions
 1. Install JDK14+ or a JRE.
 2. Download the Release titled 'AniMate Executable'
 3. Open input.tcts in a text editor and use the AniMate syntax described below.
